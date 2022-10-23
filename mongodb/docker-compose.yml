@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  mongodb:
+    image: mongo
+    ports: 
+      - 27017-27019:27017-27019
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 123456
+      TZ: Asia/Shanghai
